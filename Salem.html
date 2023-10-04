@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link id='csslink' rel="stylesheet" href="style.css" type="text/css">
+    <link rel="stylesheet" href="alternate.css" type="text/css" disabled>
+    <title>Salem</title>
+    <style>
+
+    </style>
+</head>
+<body>
+    <header id="header">
+        <h1>Salem</h1>
+        <nav id="navbar">
+            <ul>
+                <li class="buttons"><a href="index.html">Home</a></li>
+                <li class="buttons"><a href="Percy.html">Percy</a></li>
+                <li class="buttons"> Salem </li>
+                <li class="buttons"><a href="Venus.html">Venus</a></li>
+                <li class="buttons"><a href="Zeus.html">Zeus</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="body">
+        <article>
+            <h2>About Salem</h2>
+            <img src="images/SalemBlep.GIF" alt="Salem the Black Cat? idk "width="400" style="margin: 10px;">
+            <h3>Here's some facts about Salem.</h3>
+            <p>Salem is 6 years old.
+                <BR>
+                <BR> He was a stray that just walked up on my porch one day.
+                <BR>   
+                <BR> He has a weird obsession with trying to eat peoples hair.
+            </p>
+            <img src="images/salemsmiling.jpg" alt="Salem smiling"width="400" style="margin: 10px;">
+           
+        </article>
+        <button class = "buttons" onclick="toggleCSS()">Change Styles</button>
+    </main>
+
+    <footer id="footer">
+        &copy; Favour Salako & Selena Tran/CatWorld
+    </footer>
+
+
+    <script>
+        function toggleCSS() {
+            var currentCSS = document.getElementById('csslink');
+            if (currentCSS.getAttribute('href') == 'style.css') {
+                currentCSS.setAttribute('href', 'alternate.css');
+            } else {
+                currentCSS.setAttribute('href', 'style.css');
+            }
+        }
+    </script>
+</body>
+</html>

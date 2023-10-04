@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link id='csslink' rel="stylesheet" href="style.css" type="text/css">
+    <link rel="stylesheet" href="alternate.css" type="text/css" disabled>
+    <title>Home</title>
+    <style>
+
+    </style>
+</head>
+<body>
+    <header id="header">
+        <h1>Home</h1>
+        <p>Choose a cat to learn about</p>
+        <nav id="navbar">
+            <ul>
+                <li class="buttons"></li>> Home </li>
+                <li class="buttons"><a href="Percy.html">Percy</a></li>
+                <li class="buttons"><a href="Salem.html">Salem</a></li>
+                <li class="buttons"><a href="Venus.html">Venus</a></li>
+                <li class="buttons"><a href="Zeus.html">Zeus</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="body">
+        <article>
+            <h2>Welcome to the Cat World</h2>
+            <div>
+                <img src="images/ALL4.JPG" alt="4 cats on a couch" >
+                <img src="images/LazerEyesPZ.jpg" alt="Percy and Zeus">
+                <img src="images/CatTriangle.jpg" alt="CatTriangle">
+                <img src="images/Salem&Zeus.jpg" alt="Salem and Zeus">
+                <img src="images/SalemHiding.jpg" alt="Salem hiding from Percy">
+                <video src="images/StringToy.MP4" controls></video>
+            </div>
+        </article>
+
+        <table>
+            <tr>
+                <th>Cat Name </th>
+                <th> Cuteness Rating </th>
+               
+            </tr>
+            <tr>
+                <td>Percy</td>
+                <td>5/5</td>
+               
+            </tr>
+            <tr>
+                <td>Salem</td>
+                <td>5/5</td>
+                
+            </tr>
+            <tr>
+                <td>Venus</td>
+                <td>5/5</td>
+                
+            </tr>
+            <tr>
+                <td>Zeus</td>
+                <td>5/5</td>
+               
+            </tr>
+        </table>
+        
+        <button class = "buttons" onclick="toggleCSS()">Change Styles</button>
+        
+    </main>
+
+    <footer id="footer">
+        <div>
+            &copy; Favour Salako & Selena Tran/CatWorld
+        </div>
+    </footer>
+
+
+
+   <script>
+
+        function toggleCSS() {
+            var currentCSS = document.getElementById('csslink');
+            if (currentCSS.getAttribute('href') == 'style.css') {
+                currentCSS.setAttribute('href', 'alternate.css');
+            } else {
+                currentCSS.setAttribute('href', 'style.css');
+            }
+        }
+        
+    </script>
+</body>
+</html>

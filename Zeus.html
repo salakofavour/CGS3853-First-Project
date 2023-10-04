@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link id='csslink' rel="stylesheet" href="style.css" type="text/css">
+    <link rel="stylesheet" href="alternate.css" type="text/css" disabled>
+    <title>Zeus</title>
+    <style>
+       
+    </style>
+</head>
+<body>
+    <header id="header">
+        <h1>Zeus</h1>
+        <nav id="navbar">
+            <ul>
+                <li class="buttons"><a href="index.html">Home</a></li>
+                <li class="buttons"><a href="Percy.html">Percy</a></li>
+                <li class="buttons"><a href="Salem.html">Salem</a></li>
+                <li class="buttons"><a href="Venus.html">Venus</a></li>
+                <li class="buttons"> Zeus </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="body">
+        <article>
+            <h2>About Zeus</h2>
+            <img src="images/spookykitty.jpg" alt="Zeus the Polydactl" width="400" style="margin: 10px;">
+            <p>Zeus is 3 years old.
+                <BR>
+                <BR> Zeus is a Polydactl which means he has extra fingers or toes.
+                <BR>
+                <BR> Zeus has 6 on each paw.
+            
+            </p>
+            <img src="images/ZeusBeansss.jpg" alt="Zeus beans"width="400" style="margin: 10px;">
+        </article>
+        <button class = "buttons" onclick="toggleCSS()">Change Styles</button>
+    </main>
+
+    <footer id="footer">
+        &copy; Favour Salako & Selena Tran/CatWorld
+    </footer>
+
+
+    <script>
+        function toggleCSS() {
+            var currentCSS = document.getElementById('csslink');
+            if (currentCSS.getAttribute('href') == 'style.css') {
+                currentCSS.setAttribute('href', 'alternate.css');
+            } else {
+                currentCSS.setAttribute('href', 'style.css');
+            }
+        }
+    </script>
+</body>
+</html>
