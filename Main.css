@@ -7,7 +7,7 @@ body{
     height: 100%;
     font-size: medium;
     font-family: Georgia, 'Times New Roman', Times, serif;
-    color: black;
+    text-color: black;
     background: linear-gradient(rgb(102, 142, 45), rgb(58, 205, 50));
     grid-template-columns: repeat(auto);
     text-align: center;
